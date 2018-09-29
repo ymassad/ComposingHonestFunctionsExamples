@@ -21,6 +21,7 @@ namespace ReportGenerator5
             var sb = new MyStringBuilder();
 
             sb.AppendLine("Number of cities: " + cities.Length.AsString());
+            sb.AppendLine();
 
             foreach (var subReport in cities.Select(x => cityReportGenerator.Generate(x)))
             {

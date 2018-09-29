@@ -24,6 +24,7 @@ namespace ReportGenerator2
             var sb = new MyStringBuilder();
 
             sb.AppendLine("Number of cities: " + cities.Length.AsString());
+            sb.AppendLine();
 
             foreach (var subReport in cities.Select(GenerateReportForCity))
             {
@@ -40,6 +41,7 @@ namespace ReportGenerator2
             sb.AppendLine("City name: " + city.Name);
 
             sb.AppendLine("Number of customers in the city: " + city.Customers.Length.AsString());
+            sb.AppendLine();
 
             foreach (var subReport in city.Customers.Select(GenerateReportForCustomer))
             {
