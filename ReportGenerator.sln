@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonCode", "CommonCode\Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportGenerator8", "ReportGenerator8\ReportGenerator8.csproj", "{22E149A2-054D-4E45-87B1-045AF311C2DF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportGenerator9", "ReportGenerator9\ReportGenerator9.csproj", "{1F90B445-A386-4255-A232-5441C2F927E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{22E149A2-054D-4E45-87B1-045AF311C2DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22E149A2-054D-4E45-87B1-045AF311C2DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22E149A2-054D-4E45-87B1-045AF311C2DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F90B445-A386-4255-A232-5441C2F927E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F90B445-A386-4255-A232-5441C2F927E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F90B445-A386-4255-A232-5441C2F927E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F90B445-A386-4255-A232-5441C2F927E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
