@@ -13,10 +13,13 @@ namespace ReportGenerator8
 
             var cities = DatabaseModuleFunctions.LoadAllDataWithoutOrders();
 
+            var generateReportForOrder =
+                ReportingModule.GenerateReportForOrder();
+
             var generateReportForCustomer =
                 ReportingModule.GenerateReportForCustomer()
                     .HonestlyInject(
-                        ReportingModule.GenerateReportForOrder());
+                        generateReportForOrder);
 
             var generateReportForCity =
                 ReportingModule.GenerateReportForCity()

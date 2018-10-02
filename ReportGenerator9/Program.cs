@@ -16,10 +16,13 @@ namespace ReportGenerator9
 
             var PureCompose = PureLambda.Create(() =>
             {
+                var generateReportForOrder =
+                    ReportingModule.GenerateReportForOrder();
+
                 var generateReportForCustomer =
                     ReportingModule.GenerateReportForCustomer()
                         .HonestlyInject(
-                            ReportingModule.GenerateReportForOrder());
+                            generateReportForOrder);
 
                 var generateReportForCity =
                     ReportingModule.GenerateReportForCity()
