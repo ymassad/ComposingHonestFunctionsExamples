@@ -8,7 +8,7 @@ namespace ReportGenerator2
 {
     class Program
     {
-        private static int DummySate;
+        private static int DummyState;
 
         static void Main(string[] args)
         {
@@ -101,7 +101,7 @@ namespace ReportGenerator2
 
         private static ImmutableArray<City> LoadAllDataWithoutOrders()
         {
-            DummySate++;
+            DummyState++;
 
             return ImmutableArray.Create(
                 new City(
@@ -117,7 +117,7 @@ namespace ReportGenerator2
 
         private static ImmutableArray<Order> LoadOrdersForCustomer(Customer customer)
         {
-            DummySate++;
+            DummyState++;
 
             if (customer.Name == "Adam Smith")
             {

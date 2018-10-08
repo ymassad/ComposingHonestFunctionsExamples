@@ -5,11 +5,11 @@ namespace ReportGenerator9
 {
     public static class DatabaseModuleFunctions
     {
-        private static int DummySate;
+        private static int DummyState;
 
         public static ImmutableArray<City> LoadAllDataWithoutOrders()
         {
-            DummySate++;
+            DummyState++;
 
             return ImmutableArray.Create(
                 new City(
@@ -25,7 +25,7 @@ namespace ReportGenerator9
 
         public static ImmutableArray<Order> LoadOrdersForCustomer(Customer customer)
         {
-            DummySate++;
+            DummyState++;
 
             if (customer.Name == "Adam Smith")
             {

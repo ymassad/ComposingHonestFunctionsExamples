@@ -8,7 +8,7 @@ namespace ReportGenerator
 {
     class Program
     {
-        private static int DummySate;
+        private static int DummyState;
 
         static void Main(string[] args)
         {
@@ -102,7 +102,7 @@ namespace ReportGenerator
 
         private static ImmutableArray<City> LoadAllData()
         {
-            DummySate++;
+            DummyState++;
 
             return ImmutableArray.Create(
                     new City(
